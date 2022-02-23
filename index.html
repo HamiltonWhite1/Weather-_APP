@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="text-center">
+        <h1><strong>Check Your Weather</strong></h1>
+    </header>
+    <main class="container mb-3">
+        <form id="submit_search">
+            <div class="row">
+                <div class="col-3">
+                    <select id="temp_unit" class="form-control" name="unit_selection">
+                        <option value="metric">Celsius</option>
+                        <option value="imperial">Fahrenheit</option>
+                        <option value="standard">Kelvin</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <input class="form-control" id="city_weather" placeholder="Enter your city"
+                            name="city_selection">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <input name="" id="search_weather" class="btn btn-dark" type="submit" value="Search for your city weather">
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-3">
+                <div class="container">
+                    <h1>Forecast</h1>
+                    <ul id="cloud_coverage" class="list-group">
+                        <!-- add li here ##accessed through .weather -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="container">
+                    <h1>Temperatures</h1>
+                    <ul id="weather_temps" class="list-group">
+                        <!-- add li here ##accessed through .main-->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="container">
+                    <h1>Wind</h1>
+                    <ul id="wind_speed" class="list-group">
+                        <!-- add li here ##accessed through .wind.speed-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col-3">
+                <input name="" id="clear_search" class="btn btn-dark" type="submit" value="Clear your searches">
+            </div>
+            <div class="col-6">
+
+            </div>
+            <div class="col-3">
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+
+</html>
